@@ -1,0 +1,16 @@
+<odoo>
+    <record id="face_capture" model="ir.ui.view">
+        <field name="name">capture.face</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='image_1920']" position="after">
+                <button name="new_employee_image" type="object" class="oe_highlight" string="CLICK IMAGE"/>
+            </xpath>
+            <xpath expr="//field[@name='image_1920']" position="attributes">
+                <attributes name="readonly">1</attributes>
+            </xpath>
+        </field>
+    
+    </record>
+</odoo>

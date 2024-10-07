@@ -1,0 +1,6 @@
+Opencv-cv2
+numpy
+base64
+face_recognition
+PIL
+tkinter
